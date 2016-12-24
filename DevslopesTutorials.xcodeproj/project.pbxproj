@@ -14,6 +14,7 @@
 		4AED61E51E0F38CA000E7E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AED61E41E0F38CA000E7E6A /* Assets.xcassets */; };
 		4AED61E81E0F38CA000E7E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AED61E61E0F38CA000E7E6A /* LaunchScreen.storyboard */; };
 		4AED61F31E0F38CC000E7E6A /* DevslopesTutorialsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AED61F21E0F38CC000E7E6A /* DevslopesTutorialsTests.m */; };
+		4AED62001E0F3919000E7E6A /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AED61FF1E0F3919000E7E6A /* HTTPService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		4AED61EE1E0F38CC000E7E6A /* DevslopesTutorialsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevslopesTutorialsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AED61F21E0F38CC000E7E6A /* DevslopesTutorialsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DevslopesTutorialsTests.m; sourceTree = "<group>"; };
 		4AED61F41E0F38CC000E7E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AED61FE1E0F3919000E7E6A /* HTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
+		4AED61FF1E0F3919000E7E6A /* HTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		4AED61D71E0F38C9000E7E6A /* DevslopesTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				4AED61FD1E0F38DD000E7E6A /* Services */,
 				4AED61DB1E0F38C9000E7E6A /* AppDelegate.h */,
 				4AED61DC1E0F38CA000E7E6A /* AppDelegate.m */,
 				4AED61DE1E0F38CA000E7E6A /* ViewController.h */,
@@ -109,6 +113,15 @@
 				4AED61F41E0F38CC000E7E6A /* Info.plist */,
 			);
 			path = DevslopesTutorialsTests;
+			sourceTree = "<group>";
+		};
+		4AED61FD1E0F38DD000E7E6A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4AED61FE1E0F3919000E7E6A /* HTTPService.h */,
+				4AED61FF1E0F3919000E7E6A /* HTTPService.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AED61E01E0F38CA000E7E6A /* ViewController.m in Sources */,
+				4AED62001E0F3919000E7E6A /* HTTPService.m in Sources */,
 				4AED61DD1E0F38CA000E7E6A /* AppDelegate.m in Sources */,
 				4AED61DA1E0F38C9000E7E6A /* main.m in Sources */,
 			);
