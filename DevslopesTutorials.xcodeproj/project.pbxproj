@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A80F12A1E104D19004A56ED /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A80F1291E104D19004A56ED /* CustomCell.m */; };
 		4AED61DA1E0F38C9000E7E6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AED61D91E0F38C9000E7E6A /* main.m */; };
 		4AED61DD1E0F38CA000E7E6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AED61DC1E0F38CA000E7E6A /* AppDelegate.m */; };
 		4AED61E01E0F38CA000E7E6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AED61DF1E0F38CA000E7E6A /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A80F1281E104D19004A56ED /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		4A80F1291E104D19004A56ED /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		4AED61D51E0F38C9000E7E6A /* DevslopesTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevslopesTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AED61D91E0F38C9000E7E6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4AED61DB1E0F38C9000E7E6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A80F1271E104CDD004A56ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A80F1281E104D19004A56ED /* CustomCell.h */,
+				4A80F1291E104D19004A56ED /* CustomCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		4AED61CC1E0F38C8000E7E6A = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +96,7 @@
 		4AED61D71E0F38C9000E7E6A /* DevslopesTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				4A80F1271E104CDD004A56ED /* View */,
 				4AED61FD1E0F38DD000E7E6A /* Services */,
 				4AED61DB1E0F38C9000E7E6A /* AppDelegate.h */,
 				4AED61DC1E0F38CA000E7E6A /* AppDelegate.m */,
@@ -232,6 +245,7 @@
 				4AED62001E0F3919000E7E6A /* HTTPService.m in Sources */,
 				4AED61DD1E0F38CA000E7E6A /* AppDelegate.m in Sources */,
 				4AED61DA1E0F38C9000E7E6A /* main.m in Sources */,
+				4A80F12A1E104D19004A56ED /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +444,7 @@
 				4AED61F91E0F38CC000E7E6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AED61FA1E0F38CC000E7E6A /* Build configuration list for PBXNativeTarget "DevslopesTutorialsTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +453,7 @@
 				4AED61FC1E0F38CC000E7E6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
