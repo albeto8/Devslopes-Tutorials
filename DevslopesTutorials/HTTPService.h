@@ -14,5 +14,6 @@ typedef void (^onComplete)(NSArray * __nullable dataArray, NSString * __nullable
 
 + (id) instance;
 - (void) getTutorials:(nullable onComplete)completionHandler;
+- (void) postComment;
 
 @end

@@ -49,6 +49,8 @@
             //Display alert to user
         }
     }];
+    
+    [[HTTPService instance]postComment];
 }
 
 -(void) updateTableData {
