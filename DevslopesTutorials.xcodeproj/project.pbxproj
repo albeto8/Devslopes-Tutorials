@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A51582F1E10AAB10079C3B9 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A51582E1E10AAB10079C3B9 /* Video.m */; };
+		4A5158331E10DA0C0079C3B9 /* VideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5158321E10DA0C0079C3B9 /* VideoVC.m */; };
 		4A80F12A1E104D19004A56ED /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A80F1291E104D19004A56ED /* CustomCell.m */; };
 		4AED61DA1E0F38C9000E7E6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AED61D91E0F38C9000E7E6A /* main.m */; };
 		4AED61DD1E0F38CA000E7E6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AED61DC1E0F38CA000E7E6A /* AppDelegate.m */; };
@@ -32,6 +33,8 @@
 /* Begin PBXFileReference section */
 		4A51582D1E10AAB10079C3B9 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		4A51582E1E10AAB10079C3B9 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		4A5158311E10DA0C0079C3B9 /* VideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoVC.h; sourceTree = "<group>"; };
+		4A5158321E10DA0C0079C3B9 /* VideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoVC.m; sourceTree = "<group>"; };
 		4A80F1281E104D19004A56ED /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		4A80F1291E104D19004A56ED /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		4AED61D51E0F38C9000E7E6A /* DevslopesTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevslopesTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +81,17 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		4A5158301E10D9750079C3B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4AED61DE1E0F38CA000E7E6A /* ViewController.h */,
+				4AED61DF1E0F38CA000E7E6A /* ViewController.m */,
+				4A5158311E10DA0C0079C3B9 /* VideoVC.h */,
+				4A5158321E10DA0C0079C3B9 /* VideoVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		4A80F1271E104CDD004A56ED /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,11 +124,10 @@
 			children = (
 				4A51582C1E10AA840079C3B9 /* Model */,
 				4A80F1271E104CDD004A56ED /* View */,
+				4A5158301E10D9750079C3B9 /* Controller */,
 				4AED61FD1E0F38DD000E7E6A /* Services */,
 				4AED61DB1E0F38C9000E7E6A /* AppDelegate.h */,
 				4AED61DC1E0F38CA000E7E6A /* AppDelegate.m */,
-				4AED61DE1E0F38CA000E7E6A /* ViewController.h */,
-				4AED61DF1E0F38CA000E7E6A /* ViewController.m */,
 				4AED61E11E0F38CA000E7E6A /* Main.storyboard */,
 				4AED61E41E0F38CA000E7E6A /* Assets.xcassets */,
 				4AED61E61E0F38CA000E7E6A /* LaunchScreen.storyboard */,
@@ -258,6 +271,7 @@
 				4AED62001E0F3919000E7E6A /* HTTPService.m in Sources */,
 				4AED61DD1E0F38CA000E7E6A /* AppDelegate.m in Sources */,
 				4A51582F1E10AAB10079C3B9 /* Video.m in Sources */,
+				4A5158331E10DA0C0079C3B9 /* VideoVC.m in Sources */,
 				4AED61DA1E0F38C9000E7E6A /* main.m in Sources */,
 				4A80F12A1E104D19004A56ED /* CustomCell.m in Sources */,
 			);

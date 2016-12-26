@@ -10,6 +10,7 @@
 #import "HTTPService.h"
 #import "Video.h"
 #import "CustomCell.h"
+#import "VideoVC.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -56,10 +57,6 @@
     });
 }
 
--(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-}
-
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     CustomCell *cell = (CustomCell*)[tableView dequeueReusableCellWithIdentifier:@"cell"];
@@ -77,12 +74,25 @@
     [customCell updateUI:video];
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    Video *video = [self.videoList objectAtIndex:indexPath.row];
+    
+    [self performSegueWithIdentifier:@"videoVC" sender:video];
+}
+
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.videoList.count;
 }
 
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    VideoVC *vc = (VideoVC*)segue.destinationViewController;
+    Video *video = (Video*)sender;
+    
+    vc.video = video;
 }
 
 @end
