@@ -70,6 +70,13 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    Video *video = [self.videoList objectAtIndex:indexPath.row];
+    CustomCell *customCell = (CustomCell*)cell;
+    [customCell updateUI:video];
+}
+
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.videoList.count;
 }
